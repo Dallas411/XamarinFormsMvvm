@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:XamarinFormsMvvm"
+             x:Class="XamarinFormsMvvm.MainPage">
+
+    <StackLayout>
+        <Label x:Name="WelcomeTextLabel"
+    Text="{Binding WelcomeText}" 
+    HorizontalOptions="Center"
+    VerticalOptions="Center" />
+
+        <Button Text="Saluta 1" Clicked="ButtonClicked"  />
+        <Button Text="Saluta 2" Command="{Binding ButtonClickedCommand}" />
+    </StackLayout>
+
+</ContentPage>
